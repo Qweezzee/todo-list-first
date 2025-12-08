@@ -96,22 +96,20 @@ function App() {
       </div>
       
       <div className="container">
-        {/* Поиск */}
         <div className="search-container">
           <input
             className="search-input"
-            placeholder="🔍 Поиск задач или тегов..."
+            placeholder=" Поиск задач или тегов..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
 
-        {/* Добавление задачи */}
         <div className="add-task-section">
           <div className="add-task">
             <input
               className="add-task-input"
-              placeholder="✏️ Введите новую задачу..."
+              placeholder=" Введите новую задачу..."
               value={taskText}
               onChange={(e) => setTaskText(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && addTask()}
@@ -122,12 +120,11 @@ function App() {
           </div>
         </div>
 
-        {/* Управление тегами */}
         <div className="tags-section">
           <div className="tags-input-container">
             <input
               className="tags-input"
-              placeholder="🏷️ Создать новый тег..."
+              placeholder="Создать новый тег..."
               value={newTag}
               onChange={(e) => setNewTag(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && addTag()}
@@ -145,12 +142,8 @@ function App() {
           </div>
         </div>
 
-        {/* Список задач */}
         {filteredTasks.length === 0 ? (
-          <div className="empty-state">
-            <div className="empty-state-icon">📝</div>
-            <h3>Задачи не найдены</h3>
-            <p>Создайте первую задачу или измените параметры поиска</p>
+          <div className="empty-state">         
           </div>
         ) : (
           <ul className="task-list">
@@ -194,17 +187,17 @@ function App() {
                         </span>
                         <div className="task-actions">
                           <button className="edit-btn" onClick={() => startEdit(task)}>
-                            ✏️ Редактировать
+                             Редактировать
                           </button>
                           <button className="delete-btn" onClick={() => deleteTask(task.id)}>
-                            🗑️ Удалить
+                             Удалить
                           </button>
                         </div>
                       </>
                     )}
                   </div>
 
-                  {/* Теги задачи */}
+
                   <div className="task-tags">
                     {task.tags.map(tag => (
                       <div 
@@ -228,7 +221,7 @@ function App() {
                     </button>
                   </div>
 
-                  {/* Дедлайн */}
+               
                   <div className="deadline-section">
                     <span className="deadline-label">Срок выполнения:</span>
                     <input

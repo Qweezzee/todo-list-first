@@ -5,7 +5,6 @@ const Header = ({ toggleTheme, theme }) => {
   return (
     <div className="header-content">
       <div className="logo-section">
-        <div className="logo-icon">✅</div>
         <span className="title">Task Manager</span>
       </div>
       
@@ -18,18 +17,9 @@ const Header = ({ toggleTheme, theme }) => {
           {theme === 'light' ? '🌙' : '☀️'}
         </button>
         
-        <div className="user-info">
-          <div className="avatar-container">
-            <div className="avatar">👤</div>
-            <div className="user-status online"></div>
-          </div>
-          <div className="user-details">
-            <span className="username">Qweez</span>
-            <span className="user-role">Администратор</span>
-          </div>
+     
         </div>
       </div>
-    </div>
   );
 };
 
