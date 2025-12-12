@@ -9,7 +9,7 @@ function App() {
   });
   const [taskText, setTaskText] = useState('');
   const [search, setSearch] = useState('');
-  const [tags, setTags] = useState(['Важное', 'Работа', 'Личное', 'Срочно']);
+  const [tags, setTags] = useState(['Важное', 'Работа', 'Срочно']);
   const [newTag, setNewTag] = useState('');
   const [theme, setTheme] = useState('light');
   const [editTaskId, setEditTaskId] = useState(null);
@@ -99,7 +99,7 @@ function App() {
         <div className="search-container">
           <input
             className="search-input"
-            placeholder=" Поиск задач или тегов..."
+            placeholder=" Поиск задач или тегов"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
@@ -109,7 +109,7 @@ function App() {
           <div className="add-task">
             <input
               className="add-task-input"
-              placeholder=" Введите новую задачу..."
+              placeholder=" Введите новую задачу"
               value={taskText}
               onChange={(e) => setTaskText(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && addTask()}
@@ -124,7 +124,7 @@ function App() {
           <div className="tags-input-container">
             <input
               className="tags-input"
-              placeholder="Создать новый тег..."
+              placeholder="Создать новый тег"
               value={newTag}
               onChange={(e) => setNewTag(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && addTag()}

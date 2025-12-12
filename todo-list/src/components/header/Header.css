@@ -11,18 +11,10 @@
   gap: 15px;
 }
 
-.logo-icon {
-  font-size: 32px;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 10px;
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-}
-
 .title {
   font-size: 28px;
   font-weight: 700;
-  background: linear-gradient(85deg, #fb63f9, #c2e534);
+  background-color: aquamarine;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -54,53 +46,6 @@
   transform: rotate(15deg) scale(1.1);
 }
 
-.user-info {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 10px 20px;
-  border-radius: 25px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.avatar-container {
-  position: relative;
-}
-
-
-
-.user-status {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 12px;
-  height: 12px;
-  background-color: #4cd964;
-  border: 2px solid white;
-  border-radius: 50%;
-}
-
-.user-status.online {
-  background-color: #4cd964;
-}
-
-.user-details {
-  display: flex;
-  flex-direction: column;
-}
-
-.username {
-  font-weight: 600;
-  font-size: 16px;
-  color: white;
-}
-
-.user-role {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.8);
-}
 
 
 @media (max-width: 768px) {
